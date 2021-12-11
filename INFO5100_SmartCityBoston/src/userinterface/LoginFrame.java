@@ -55,7 +55,7 @@ public class LoginFrame extends javax.swing.JFrame {
          system.setHld(hsd);
          system.setThld(thsd);
          }
-        this.setSize(950, 700);
+        this.setSize(850, 630);
     }
 
     public CitizensDirectory getDir() {
@@ -99,9 +99,9 @@ public class LoginFrame extends javax.swing.JFrame {
                 loginButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 120, -1));
-        jPanel1.add(txtuserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 100, 30));
-        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 100, 30));
+        jPanel1.add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 120, -1));
+        jPanel1.add(txtuserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 100, 30));
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 100, 30));
 
         jLabel1.setBackground(new java.awt.Color(102, 102, 102));
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -110,7 +110,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel1.setText("Username");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel1.setOpaque(true);
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 140, 30));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 140, 30));
 
         jLabel2.setBackground(new java.awt.Color(102, 102, 102));
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -118,7 +118,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Login as Guest");
         jLabel2.setOpaque(true);
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, 120, 30));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, 120, 30));
         jPanel1.add(loginJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 253, -1, -1));
 
         logoutButton.setBackground(new java.awt.Color(51, 51, 51));
@@ -131,7 +131,7 @@ public class LoginFrame extends javax.swing.JFrame {
                 logoutButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 120, -1));
+        jPanel1.add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 120, -1));
 
         guestLogin.setBackground(new java.awt.Color(51, 51, 51));
         guestLogin.setFont(new java.awt.Font("Segoe Script", 3, 14)); // NOI18N
@@ -142,7 +142,7 @@ public class LoginFrame extends javax.swing.JFrame {
                 guestLoginActionPerformed(evt);
             }
         });
-        jPanel1.add(guestLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 590, 120, -1));
+        jPanel1.add(guestLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 520, 120, -1));
 
         jLabel3.setBackground(new java.awt.Color(102, 102, 102));
         jLabel3.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -151,7 +151,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel3.setText("Password");
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel3.setOpaque(true);
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 140, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 140, 30));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/17369969b4211106219441dc5f06b8d2.png"))); // NOI18N
         jLabel5.setOpaque(true);
