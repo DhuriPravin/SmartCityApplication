@@ -55,7 +55,7 @@ public class LoginFrame extends javax.swing.JFrame {
          system.setHld(hsd);
          system.setThld(thsd);
          }
-        this.setSize(850, 630);
+        this.setSize(1130, 690);
     }
 
     public CitizensDirectory getDir() {
