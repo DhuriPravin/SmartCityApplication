@@ -90,7 +90,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        loginButton.setBackground(new java.awt.Color(20, 53, 94));
+        loginButton.setBackground(new java.awt.Color(51, 51, 51));
         loginButton.setFont(new java.awt.Font("Segoe Script", 3, 14)); // NOI18N
         loginButton.setForeground(new java.awt.Color(255, 255, 255));
         loginButton.setText("Login");
@@ -121,7 +121,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, 120, 30));
         jPanel1.add(loginJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 253, -1, -1));
 
-        logoutButton.setBackground(new java.awt.Color(20, 53, 94));
+        logoutButton.setBackground(new java.awt.Color(51, 51, 51));
         logoutButton.setFont(new java.awt.Font("Segoe Script", 3, 14)); // NOI18N
         logoutButton.setForeground(new java.awt.Color(255, 255, 255));
         logoutButton.setText("Logout");
@@ -133,7 +133,7 @@ public class LoginFrame extends javax.swing.JFrame {
         });
         jPanel1.add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 120, -1));
 
-        guestLogin.setBackground(new java.awt.Color(20, 53, 94));
+        guestLogin.setBackground(new java.awt.Color(51, 51, 51));
         guestLogin.setFont(new java.awt.Font("Segoe Script", 3, 14)); // NOI18N
         guestLogin.setForeground(new java.awt.Color(255, 255, 255));
         guestLogin.setText("Guest User");
