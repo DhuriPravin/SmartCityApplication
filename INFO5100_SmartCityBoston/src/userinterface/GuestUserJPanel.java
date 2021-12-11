@@ -67,10 +67,10 @@ CitizensDirectory citizens_Di;
         jLabel1.setText("Guest User Dashboard");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel1.setOpaque(true);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 300, 43));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 300, 43));
 
-        RegisterCitizenButton.setBackground(new java.awt.Color(51, 51, 51));
-        RegisterCitizenButton.setFont(new java.awt.Font("Sitka Small", 2, 18)); // NOI18N
+        RegisterCitizenButton.setBackground(new java.awt.Color(43, 0, 0));
+        RegisterCitizenButton.setFont(new java.awt.Font("Sitka Small", 3, 18)); // NOI18N
         RegisterCitizenButton.setForeground(new java.awt.Color(255, 255, 255));
         RegisterCitizenButton.setText("Register Citizen");
         RegisterCitizenButton.addActionListener(new java.awt.event.ActionListener() {
@@ -78,10 +78,10 @@ CitizensDirectory citizens_Di;
                 RegisterCitizenButtonActionPerformed(evt);
             }
         });
-        add(RegisterCitizenButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, 245, 40));
+        add(RegisterCitizenButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 245, 40));
 
-        ViewAllCitizensButton.setBackground(new java.awt.Color(51, 51, 51));
-        ViewAllCitizensButton.setFont(new java.awt.Font("Sitka Small", 2, 18)); // NOI18N
+        ViewAllCitizensButton.setBackground(new java.awt.Color(43, 0, 0));
+        ViewAllCitizensButton.setFont(new java.awt.Font("Sitka Small", 3, 18)); // NOI18N
         ViewAllCitizensButton.setForeground(new java.awt.Color(255, 255, 255));
         ViewAllCitizensButton.setText("View Citizens");
         ViewAllCitizensButton.addActionListener(new java.awt.event.ActionListener() {
@@ -89,11 +89,11 @@ CitizensDirectory citizens_Di;
                 ViewAllCitizensButtonActionPerformed(evt);
             }
         });
-        add(ViewAllCitizensButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, 244, 40));
+        add(ViewAllCitizensButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 244, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Loginframe.jpeg"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 620));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 710));
     }// </editor-fold>//GEN-END:initComponents
 
     private void RegisterCitizenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterCitizenButtonActionPerformed
