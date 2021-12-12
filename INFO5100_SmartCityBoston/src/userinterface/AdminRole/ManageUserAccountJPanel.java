@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author pravin
+ * @author manis
  */
 public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
@@ -67,9 +67,8 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
             for (UserAccount ua : organization.getUserAccountDirectory().getUserAccountList()) {
                 Object row[] = new Object[2];
-                row[0] = ua.getEmployee();
-                row[1] = ua;
-                row[2] = ua.getRole();
+                row[0] = ua;
+                row[1] = ua.getRole();
                 
                 ((DefaultTableModel) userJTable.getModel()).addRow(row);
             }
@@ -98,40 +97,49 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         organizationComboBox = new javax.swing.JComboBox();
         jLabel4 = new javax.swing.JLabel();
         roleComboBox = new javax.swing.JComboBox();
-        jSeparator1 = new javax.swing.JSeparator();
         jLabel8 = new javax.swing.JLabel();
         txtPassword = new javax.swing.JPasswordField();
+        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        createUserJButton.setBackground(new java.awt.Color(20, 53, 94));
-        createUserJButton.setForeground(new java.awt.Color(255, 255, 255));
+        createUserJButton.setBackground(new java.awt.Color(153, 122, 165));
+        createUserJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         createUserJButton.setText("Create");
+        createUserJButton.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.darkGray, java.awt.Color.lightGray));
         createUserJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createUserJButtonActionPerformed(evt);
             }
         });
-        add(createUserJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, 190, -1));
-        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, 170, -1));
+        add(createUserJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 570, 140, 30));
 
-        jLabel1.setText("User Name");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 410, -1, 20));
+        txtUsername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, 100, 25));
 
+        jLabel1.setBackground(new java.awt.Color(139, 113, 159));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("User Name : ");
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel1.setOpaque(true);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 100, 25));
+
+        userJTable.setBackground(new java.awt.Color(102, 102, 102));
+        userJTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         userJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Employee", "User Name", "Role"
+                "User Name", "Role"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false
+                false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -142,58 +150,89 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+        userJTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        userJTable.setGridColor(new java.awt.Color(102, 102, 102));
+        userJTable.setSelectionBackground(new java.awt.Color(102, 102, 102));
+        userJTable.setSelectionForeground(new java.awt.Color(102, 102, 102));
         jScrollPane1.setViewportView(userJTable);
         if (userJTable.getColumnModel().getColumnCount() > 0) {
             userJTable.getColumnModel().getColumn(0).setResizable(false);
             userJTable.getColumnModel().getColumn(1).setResizable(false);
-            userJTable.getColumnModel().getColumn(2).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 375, 179));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 170, 179));
 
-        jLabel2.setText("Password");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 450, -1, -1));
+        jLabel2.setBackground(new java.awt.Color(139, 113, 159));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("Password : ");
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel2.setOpaque(true);
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 100, 25));
 
-        jLabel3.setText("Employee");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, -1, -1));
+        jLabel3.setBackground(new java.awt.Color(139, 113, 159));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Employee : ");
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel3.setOpaque(true);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 100, 25));
 
         employeeComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(employeeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 170, -1));
+        employeeComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(employeeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 100, 25));
 
-        backjButton1.setBackground(new java.awt.Color(20, 53, 94));
-        backjButton1.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        backjButton1.setForeground(new java.awt.Color(255, 255, 255));
-        backjButton1.setText("<< Back");
+        backjButton1.setBackground(new java.awt.Color(153, 122, 165));
+        backjButton1.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        backjButton1.setText("Back");
+        backjButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.darkGray, java.awt.Color.lightGray));
         backjButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backjButton1ActionPerformed(evt);
             }
         });
-        add(backjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 510, 90, 30));
+        add(backjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 90, 30));
 
-        jLabel5.setText("Organization");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, -1, -1));
+        jLabel5.setBackground(new java.awt.Color(139, 113, 159));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel5.setText("Organization : ");
+        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel5.setOpaque(true);
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 100, 25));
 
         organizationComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        organizationComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         organizationComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 organizationComboBoxActionPerformed(evt);
             }
         });
-        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 170, -1));
+        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 100, 25));
 
-        jLabel4.setText("Role");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, -1, -1));
+        jLabel4.setBackground(new java.awt.Color(139, 113, 159));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel4.setText("Role : ");
+        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel4.setOpaque(true);
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 100, 25));
 
         roleComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(roleComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 170, -1));
-        add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, 390, -1));
+        roleComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(roleComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 100, 25));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel8.setBackground(new java.awt.Color(139, 113, 159));
+        jLabel8.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Manage User Account");
+        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel8.setFocusable(false);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
-        add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, 170, -1));
+        jLabel8.setOpaque(true);
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 250, 40));
+
+        txtPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 100, 25));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manage.jpeg"))); // NOI18N
+        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 620));
     }// </editor-fold>//GEN-END:initComponents
 
     private void createUserJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUserJButtonActionPerformed
@@ -238,9 +277,9 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JComboBox organizationComboBox;
     private javax.swing.JComboBox roleComboBox;
     private javax.swing.JPasswordField txtPassword;
