@@ -71,54 +71,103 @@ public class AddListingJPanel extends javax.swing.JPanel {
         btnAdd = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Area");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(219, 87, -1, -1));
-        add(txtArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, 270, -1));
+        jLabel1.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("Area : ");
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel1.setOpaque(true);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 150, 25));
 
-        jLabel2.setText("Street Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, -1, -1));
-        add(txtStreetName, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 140, 270, -1));
+        txtArea.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 150, 25));
 
-        jLabel3.setText("Door Number");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, -1, -1));
-        add(txtDoorNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 270, -1));
+        jLabel2.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("Street Name : ");
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel2.setOpaque(true);
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 150, 25));
 
-        jLabel4.setText("City");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, -1, -1));
-        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, 270, -1));
+        txtStreetName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtStreetName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 150, 25));
 
-        jLabel5.setText("Pin Code");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, -1, -1));
-        add(txtPinCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, 270, -1));
+        jLabel3.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Door Number : ");
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel3.setOpaque(true);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 150, 25));
 
-        btnAdd.setBackground(new java.awt.Color(20, 53, 94));
-        btnAdd.setForeground(new java.awt.Color(255, 255, 255));
+        txtDoorNumber.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtDoorNumber.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDoorNumberActionPerformed(evt);
+            }
+        });
+        add(txtDoorNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, 150, 25));
+
+        jLabel4.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel4.setText("City : ");
+        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel4.setOpaque(true);
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 150, 25));
+
+        txtCity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, 150, 25));
+
+        jLabel5.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel5.setText("Pin Code : ");
+        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel5.setOpaque(true);
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 150, 25));
+
+        txtPinCode.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtPinCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 390, 150, 25));
+
+        btnAdd.setBackground(new java.awt.Color(51, 51, 51));
+        btnAdd.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnAdd.setText("Add Listing");
+        btnAdd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
             }
         });
-        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, -1, -1));
+        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 450, 110, 40));
 
+        jLabel6.setBackground(new java.awt.Color(204, 204, 204));
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Add Permanent House Listing");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, 40));
+        jLabel6.setText("Admin Portal for Adding Houses for Sale");
+        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jLabel6.setOpaque(true);
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, 430, 40));
 
-        btnBack.setBackground(new java.awt.Color(20, 53, 94));
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("back");
+        btnBack.setBackground(new java.awt.Color(51, 51, 51));
+        btnBack.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 90, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 570, 90, 30));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/houses.jpeg"))); // NOI18N
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 640));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
@@ -185,6 +234,10 @@ public class AddListingJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBackActionPerformed
 
+    private void txtDoorNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDoorNumberActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDoorNumberActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
@@ -195,6 +248,7 @@ public class AddListingJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JTextField txtArea;
     private javax.swing.JTextField txtCity;
     private javax.swing.JTextField txtDoorNumber;
