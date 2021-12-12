@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author pravin
+ * @author manis
  */
 public class AddListingJPanel extends javax.swing.JPanel {
 
