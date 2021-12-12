@@ -42,6 +42,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -49,7 +50,8 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
 
-        userJButton.setBackground(new java.awt.Color(20, 53, 94));
+        userJButton.setBackground(new java.awt.Color(51, 51, 51));
+        userJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         userJButton.setForeground(new java.awt.Color(255, 255, 255));
         userJButton.setText("Manage User");
         userJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -57,9 +59,10 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 190, -1));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 300, -1));
 
-        manageEmployeeJButton.setBackground(new java.awt.Color(20, 53, 94));
+        manageEmployeeJButton.setBackground(new java.awt.Color(51, 51, 51));
+        manageEmployeeJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         manageEmployeeJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageEmployeeJButton.setText("Manage Employee");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -67,9 +70,10 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 190, -1));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 300, -1));
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(20, 53, 94));
+        manageOrganizationJButton.setBackground(new java.awt.Color(51, 51, 51));
+        manageOrganizationJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         manageOrganizationJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageOrganizationJButton.setText("Manage Organization");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -77,20 +81,26 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 190, -1));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 300, -1));
 
-        valueLabel.setFont(new java.awt.Font("Lucida Grande", 0, 16)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("Lucida Grande", 3, 16)); // NOI18N
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 130, 20));
 
-        jLabel7.setFont(new java.awt.Font("Lucida Grande", 0, 16)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Lucida Grande", 3, 16)); // NOI18N
         jLabel7.setText("Welcome!");
         jLabel7.setFocusable(false);
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel8.setText("Admin Work Area");
+        jLabel8.setFont(new java.awt.Font("Arial", 3, 24)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Admin Manage Portal ");
+        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel8.setFocusable(false);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 40, 350, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin4.jpeg"))); // NOI18N
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 540));
     }// </editor-fold>//GEN-END:initComponents
 
     private void userJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userJButtonActionPerformed
@@ -123,6 +133,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JButton manageEmployeeJButton;
