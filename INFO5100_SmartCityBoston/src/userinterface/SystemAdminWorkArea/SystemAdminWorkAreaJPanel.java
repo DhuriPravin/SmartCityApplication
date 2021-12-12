@@ -30,7 +30,7 @@ import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
- * @author pravin
+ * @author manis
  */
 public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -203,9 +203,13 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         pictureArea1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         buttonManage = new javax.swing.JToggleButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
+        jPanel1.setPreferredSize(new java.awt.Dimension(200, 556));
+
+        jTree.setBackground(new java.awt.Color(102, 102, 102));
         jTree.addTreeSelectionListener(new javax.swing.event.TreeSelectionListener() {
             public void valueChanged(javax.swing.event.TreeSelectionEvent evt) {
                 jTreeValueChanged(evt);
@@ -218,14 +222,12 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 161, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 570, Short.MAX_VALUE)
         );
 
         jSplitPane.setLeftComponent(jPanel1);
@@ -234,74 +236,91 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Selected Node:");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 73, -1, -1));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 100, 20));
 
+        lblSelectedNode.setForeground(new java.awt.Color(255, 255, 255));
         lblSelectedNode.setText("<View_selected_node>");
-        jPanel2.add(lblSelectedNode, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 73, -1, -1));
+        jPanel2.add(lblSelectedNode, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, -1, 20));
 
         btnManageNetwork.setBackground(new java.awt.Color(20, 53, 94));
-        btnManageNetwork.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageNetwork.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        btnManageNetwork.setForeground(new java.awt.Color(0, 51, 102));
         btnManageNetwork.setText("Manage Network");
         btnManageNetwork.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageNetworkActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 95, 294, -1));
+        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 200, 30));
 
         btnManageEnterprise.setBackground(new java.awt.Color(20, 53, 94));
-        btnManageEnterprise.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageEnterprise.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        btnManageEnterprise.setForeground(new java.awt.Color(0, 51, 102));
         btnManageEnterprise.setText("Manage Enterprise");
         btnManageEnterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 145, 294, -1));
+        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 200, 30));
 
         btnManageAdmin.setBackground(new java.awt.Color(20, 53, 94));
-        btnManageAdmin.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageAdmin.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        btnManageAdmin.setForeground(new java.awt.Color(0, 51, 102));
         btnManageAdmin.setText("Manage Enterprise Admin");
         btnManageAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageAdminActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 195, 294, -1));
+        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 200, 30));
 
         btnRegisterCitizen.setBackground(new java.awt.Color(20, 53, 94));
-        btnRegisterCitizen.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegisterCitizen.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        btnRegisterCitizen.setForeground(new java.awt.Color(0, 51, 102));
         btnRegisterCitizen.setText("Register Citizen");
         btnRegisterCitizen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegisterCitizenActionPerformed(evt);
             }
         });
-        jPanel2.add(btnRegisterCitizen, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 304, 294, -1));
+        jPanel2.add(btnRegisterCitizen, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 200, 30));
 
         btnViewAllCitizen.setBackground(new java.awt.Color(20, 53, 94));
-        btnViewAllCitizen.setForeground(new java.awt.Color(255, 255, 255));
+        btnViewAllCitizen.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        btnViewAllCitizen.setForeground(new java.awt.Color(0, 51, 102));
         btnViewAllCitizen.setText("View All Citizens");
         btnViewAllCitizen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewAllCitizenActionPerformed(evt);
             }
         });
-        jPanel2.add(btnViewAllCitizen, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 294, -1));
+        jPanel2.add(btnViewAllCitizen, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 200, 30));
         jPanel2.add(pictureArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 340, 70));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Citizen Services");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 140, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 140, -1));
 
+        buttonManage.setBackground(new java.awt.Color(20, 53, 94));
+        buttonManage.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        buttonManage.setForeground(new java.awt.Color(0, 51, 102));
         buttonManage.setText("Delete Citizen");
         buttonManage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonManageActionPerformed(evt);
             }
         });
-        jPanel2.add(buttonManage, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, 300, -1));
+        jPanel2.add(buttonManage, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 200, 30));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/17369969b4211106219441dc5f06b8d2.png"))); // NOI18N
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 570));
 
         jSplitPane.setRightComponent(jPanel2);
 
@@ -371,6 +390,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JToggleButton buttonManage;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
