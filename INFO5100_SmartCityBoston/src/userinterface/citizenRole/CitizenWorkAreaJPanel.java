@@ -276,6 +276,7 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 330, 25));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/b1.png"))); // NOI18N
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 670));
     }// </editor-fold>//GEN-END:initComponents
 
