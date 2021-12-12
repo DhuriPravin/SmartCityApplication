@@ -60,7 +60,6 @@ public class RegisterCitizen extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        pictureArea1 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -75,7 +74,7 @@ public class RegisterCitizen extends javax.swing.JPanel {
         jLabel11 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        txtPassword = new javax.swing.JPasswordField();
         txtUsername = new javax.swing.JTextField();
         txtCitizenID = new javax.swing.JTextField();
         txtEducationDetails = new javax.swing.JTextField();
@@ -91,88 +90,95 @@ public class RegisterCitizen extends javax.swing.JPanel {
         setForeground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pictureArea1.setOpaque(true);
-        add(pictureArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 820, 50));
-
         jLabel20.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setText("Enter Registration details");
         jLabel20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel20.setOpaque(true);
-        add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 350, 40));
+        add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 520, 40));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel2.setText("First Name");
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("First Name : ");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel2.setDoubleBuffered(true);
         jLabel2.setOpaque(true);
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 125, 25));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 125, 25));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel3.setText("Last Name");
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Last Name : ");
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel3.setDoubleBuffered(true);
         jLabel3.setOpaque(true);
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 125, 25));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 125, 25));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel4.setText("Address");
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel4.setText("Address : ");
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel4.setDoubleBuffered(true);
         jLabel4.setOpaque(true);
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 125, 25));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 125, 25));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel5.setText("Email Address");
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel5.setText("Email Address : ");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel5.setDoubleBuffered(true);
         jLabel5.setOpaque(true);
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 125, 25));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 125, 25));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel6.setText("Age");
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel6.setText("Age : ");
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel6.setDoubleBuffered(true);
         jLabel6.setOpaque(true);
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 125, 25));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 125, 25));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel7.setText("Gender");
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel7.setText("Gender : ");
         jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel7.setDoubleBuffered(true);
         jLabel7.setOpaque(true);
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 125, 25));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 125, 25));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel8.setText("Education Details");
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel8.setText("Education Details : ");
         jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel8.setDoubleBuffered(true);
         jLabel8.setOpaque(true);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 125, 25));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 125, 25));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel9.setText("Citizen ID");
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel9.setText("Citizen ID : ");
         jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel9.setDoubleBuffered(true);
         jLabel9.setOpaque(true);
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 125, 25));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 125, 25));
 
         jLabel15.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("Please choose your Credentials!!");
         jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel15.setOpaque(true);
-        add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, 320, 40));
+        add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, 320, 40));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel10.setText("User Name");
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel10.setText("User Name : ");
         jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel10.setDoubleBuffered(true);
         jLabel10.setOpaque(true);
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, 125, 25));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel11.setText("Password");
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel11.setText("Password : ");
         jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel11.setDoubleBuffered(true);
         jLabel11.setOpaque(true);
@@ -200,17 +206,19 @@ public class RegisterCitizen extends javax.swing.JPanel {
         });
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 580, 190, 30));
 
-        jPasswordField1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPasswordField1.setDoubleBuffered(true);
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        txtPassword.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtPassword.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtPassword.setDoubleBuffered(true);
+        txtPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
+                txtPasswordActionPerformed(evt);
             }
         });
-        add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 570, 200, 25));
+        add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 570, 200, 25));
 
         txtUsername.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtUsername.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtUsername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtUsername.setDoubleBuffered(true);
         txtUsername.addActionListener(new java.awt.event.ActionListener() {
@@ -221,6 +229,7 @@ public class RegisterCitizen extends javax.swing.JPanel {
         add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 530, 200, 25));
 
         txtCitizenID.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtCitizenID.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtCitizenID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtCitizenID.setDoubleBuffered(true);
         txtCitizenID.addActionListener(new java.awt.event.ActionListener() {
@@ -228,9 +237,10 @@ public class RegisterCitizen extends javax.swing.JPanel {
                 txtCitizenIDActionPerformed(evt);
             }
         });
-        add(txtCitizenID, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 200, 25));
+        add(txtCitizenID, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 200, 25));
 
         txtEducationDetails.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtEducationDetails.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtEducationDetails.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtEducationDetails.setDoubleBuffered(true);
         txtEducationDetails.addActionListener(new java.awt.event.ActionListener() {
@@ -238,20 +248,22 @@ public class RegisterCitizen extends javax.swing.JPanel {
                 txtEducationDetailsActionPerformed(evt);
             }
         });
-        add(txtEducationDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 200, 25));
+        add(txtEducationDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 200, 25));
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Prefer not to Answer" }));
         jComboBox1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jComboBox1.setDoubleBuffered(true);
-        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 200, 25));
+        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 200, 25));
 
         txtAge.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtAge.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtAge.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtAge.setDoubleBuffered(true);
-        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 200, 25));
+        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 200, 25));
 
         txtEmail.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtEmail.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtEmail.setDoubleBuffered(true);
         txtEmail.addActionListener(new java.awt.event.ActionListener() {
@@ -259,22 +271,26 @@ public class RegisterCitizen extends javax.swing.JPanel {
                 txtEmailActionPerformed(evt);
             }
         });
-        add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 200, 25));
+        add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 200, 25));
 
         txtResAddress.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtResAddress.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtResAddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtResAddress.setDoubleBuffered(true);
-        add(txtResAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 200, 25));
+        add(txtResAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 200, 25));
 
         txtLastName.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtLastName.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtLastName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtLastName.setDoubleBuffered(true);
-        add(txtLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 200, 25));
+        add(txtLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 200, 25));
 
         txtFirstName.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtFirstName.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtFirstName.setText("  ");
         txtFirstName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtFirstName.setDoubleBuffered(true);
-        add(txtFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 200, 25));
+        add(txtFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 200, 25));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/registernow.jpeg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 650));
@@ -282,13 +298,9 @@ public class RegisterCitizen extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        char[] passwordCharArray = jPasswordField1.getPassword();
+        char[] passwordCharArray = txtPassword.getPassword();
         String password = String.valueOf(passwordCharArray);
-         String expression = "[A-Za-z]+@+[A-Za-z]+\\.+[A-Za-z]{2,4}+$";
-        Pattern p = Pattern.compile(expression);
-        Matcher m = p.matcher(txtEmail.getText());
-
-
+      
         if (txtFirstName.getText().equals("")) {
             JOptionPane.showMessageDialog(null, " First Name can't be empty");
             return;
@@ -312,22 +324,13 @@ public class RegisterCitizen extends javax.swing.JPanel {
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(null, "Age cannot be String");
             return;
-           
-        }
-        
-       
 
-if(!m.matches())
-{
-JOptionPane.showMessageDialog(null, "Email not valid");
-return;
-}
-     
-        {
-                    JOptionPane.showMessageDialog(null, "Citizen Registered Successfully!");
-    }
-        
-        
+        }
+
+        if (!EmailCheck()) {
+            JOptionPane.showMessageDialog(null, "Email ID should be the form of xxx@xxx.xxx");
+            return;
+        }
 
         Citizen c = system.getCd().addCitizen();
         system.getUad().createUserAccount(txtUsername.getText(), password);
@@ -342,50 +345,52 @@ return;
         c.setCitizen_ID(txtCitizenID.getText());
         c.setUsername(txtUsername.getText());
         c.setPassword(password);
-        System.out.println("Registered citizen succesfully");
+        JOptionPane.showMessageDialog(null, "Citizen Registered Successfully!");
         txtFirstName.setText("");
         txtLastName.setText("");
         txtAge.setText("");
         txtEmail.setText("");
-
         txtEducationDetails.setText("");
         txtEmail.setText("");
         txtResAddress.setText("");
         txtCitizenID.setText("");
-
-        //
-        //        String userName = txtUsername.getText();
-        //        String password = txtPassword.getText();
-
         txtUsername.setText("");
-        jPasswordField1.setText("");
-        //        Organization organization = (Organization) Type.Citizen
-        //        Organization organization = (Organization) jComboBox1.getSelectedItem();
-        //        Employee employee = (Employee) employeeJComboBox.getSelectedItem();
-        //        Role role = (Role) Veteran;
-        //        Employee employee = enterprise.getEmployeeDirectory().createEmployee(txtFirstName);
-        //        organization.getUserAccountDirectory().createUserAccount(userName, password);
+        txtPassword.setText("");
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
 
-        String to = "pravindhuri1295@gmail.com";
+        String to = String.valueOf(txtEmail.getText());
         String subject = "Welcome to Smart City Portal !";
         String user = "yoursmartcityportal@gmail.com";
         String pass = "Pass@123";
-        String message = " Hello "+ (txtFirstName.getText()) + (txtLastName.getText())
-        + "Thank you for registering to Smart City Portal. You can now login and avail the desired services."
-        +"\n\n "
-        + "Regards "+
-        "Smart City Portal Team";
+        String message = " Hello " + String.valueOf(txtFirstName.getText()) + " " + String.valueOf(txtLastName.getText()) + "\n\n"
+                + "Thank you for registering to Smart City Portal. You can now login and avail the desired services."
+                + "\n\n "
+                + "Regards " + "\n\n"
+                + "Smart City Portal Team";
 
-        SendMail.send(to,subject, message, user, pass);
+        SendMail.send(to, subject, message, user, pass);
+
+        txtFirstName.setText("");
+        txtLastName.setText("");
+        txtAge.setText("");
+        txtEmail.setText("");
+        txtEducationDetails.setText("");
+        txtEmail.setText("");
+        txtResAddress.setText("");
+        txtCitizenID.setText("");
+        txtUsername.setText("");
+        txtPassword.setText("");
+
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+    }//GEN-LAST:event_txtPasswordActionPerformed
 
     private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed
         // TODO add your handling code here:
@@ -403,14 +408,24 @@ return;
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEmailActionPerformed
 
-  private void huehue() {
+    private void huehue() {
         txtCitizenID.addKeyListener(new KeyAdapter() {
-    public void keyTyped(KeyEvent e) { 
-        if (txtCitizenID.getText().length() >= 9 ) // limit textfield to 9 characters
-            e.consume(); 
-    }  
+            public void keyTyped(KeyEvent e) {
+                if (txtCitizenID.getText().length() >= 9) // limit textfield to 9 characters
+                {
+                    e.consume();
+                }
+            }
         });
     }
+
+    private boolean EmailCheck() {
+        Pattern p = Pattern.compile("^[a-zA-Z0-9]+[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$");
+        Matcher m = p.matcher(txtEmail.getText());
+        boolean b = m.matches();
+        return b;
+    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -429,14 +444,13 @@ return;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JLabel pictureArea1;
     private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtCitizenID;
     private javax.swing.JTextField txtEducationDetails;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtFirstName;
     private javax.swing.JTextField txtLastName;
+    private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtResAddress;
     private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
