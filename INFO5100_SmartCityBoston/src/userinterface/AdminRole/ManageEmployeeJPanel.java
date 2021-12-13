@@ -117,7 +117,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 220, 270, 90));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 220, 270, 90));
 
         addJButton.setBackground(new java.awt.Color(102, 102, 102));
         addJButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -127,7 +127,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 addJButtonActionPerformed(evt);
             }
         });
-        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 550, 150, 30));
+        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 470, 150, 30));
 
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationJComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -136,7 +136,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 organizationJComboBoxActionPerformed(evt);
             }
         });
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, 100, 30));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, 250, 30));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Organization : ");
@@ -145,13 +145,13 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
         backJButton.setBackground(new java.awt.Color(102, 102, 102));
         backJButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        backJButton.setText("<< Back");
+        backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 150, 30));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 520, 150, 30));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Name : ");
@@ -159,11 +159,11 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 390, 100, 30));
 
         nameJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 390, 100, 30));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 390, 230, 30));
 
         organizationEmpJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationEmpJComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(organizationEmpJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 350, 100, 30));
+        add(organizationEmpJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 350, 230, 30));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Organization : ");

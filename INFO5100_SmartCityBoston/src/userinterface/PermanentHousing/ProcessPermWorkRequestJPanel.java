@@ -52,41 +52,44 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        submitJButton.setBackground(new java.awt.Color(20, 53, 94));
+        submitJButton.setBackground(new java.awt.Color(51, 51, 51));
+        submitJButton.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         submitJButton.setText("Submit Result");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 420, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, -1, 30));
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Result : ");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 110, 25));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, 110, 25));
 
         txtresult.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(txtresult, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 150, 25));
+        add(txtresult, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 150, 25));
 
-        backJButton.setBackground(new java.awt.Color(20, 53, 94));
+        backJButton.setBackground(new java.awt.Color(51, 51, 51));
+        backJButton.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, -1, 30));
 
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Permanent Housing Application Process Admin Portal");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 440, 40));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 500, 40));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MicrosoftTeams-image.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin3.jpeg"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 480));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

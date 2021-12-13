@@ -56,40 +56,42 @@ public class ProcessTempWorkRequestJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
         backJButton.setBackground(new java.awt.Color(20, 53, 94));
+        backJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 120, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 120, -1));
 
         submitJButton.setBackground(new java.awt.Color(20, 53, 94));
+        submitJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         submitJButton.setText("Submit Result");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 410, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 340, -1, -1));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Result : ");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 110, 25));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, 110, 25));
 
         resultJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 150, 25));
+        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 150, 25));
 
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Permanent Housing Application Process Admin Portal");
+        jLabel5.setText("Temporary Housing Application Process Admin Portal");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 440, 40));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 490, 40));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MicrosoftTeams-image.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin3.jpeg"))); // NOI18N
         jLabel3.setText("jLabel3");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 470));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed

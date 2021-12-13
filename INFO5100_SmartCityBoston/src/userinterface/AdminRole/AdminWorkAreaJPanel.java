@@ -59,7 +59,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 300, -1));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 160, 40));
 
         manageEmployeeJButton.setBackground(new java.awt.Color(51, 51, 51));
         manageEmployeeJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
@@ -70,7 +70,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 300, -1));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 160, 40));
 
         manageOrganizationJButton.setBackground(new java.awt.Color(51, 51, 51));
         manageOrganizationJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
@@ -81,26 +81,26 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 300, -1));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 273, 160, 40));
 
         valueLabel.setFont(new java.awt.Font("Lucida Grande", 3, 16)); // NOI18N
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 130, 20));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 70, 130, 20));
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 3, 16)); // NOI18N
         jLabel7.setText("Welcome!");
         jLabel7.setFocusable(false);
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial", 3, 24)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Admin Manage Portal ");
         jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel8.setFocusable(false);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 40, 350, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 360, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin4.jpeg"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 540));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 114, 800, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void userJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userJButtonActionPerformed

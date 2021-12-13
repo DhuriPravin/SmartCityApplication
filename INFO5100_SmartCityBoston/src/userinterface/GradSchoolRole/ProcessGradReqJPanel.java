@@ -119,24 +119,20 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
         add(txtHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 357, 32));
 
         txtCitizenID.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
-        txtCitizenID.setForeground(new java.awt.Color(204, 204, 204));
-        txtCitizenID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 2));
-        add(txtCitizenID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 240, 25));
+        txtCitizenID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        add(txtCitizenID, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 210, 25));
 
         txtGender.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
-        txtGender.setForeground(new java.awt.Color(204, 204, 204));
-        txtGender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 2));
-        add(txtGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 240, 25));
+        txtGender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        add(txtGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 420, 210, 25));
 
         txtEmail.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
-        txtEmail.setForeground(new java.awt.Color(204, 204, 204));
-        txtEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 2));
-        add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 240, 25));
+        txtEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 390, 210, 25));
 
         txtAddress.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
-        txtAddress.setForeground(new java.awt.Color(204, 204, 204));
-        txtAddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 2));
-        add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 240, 25));
+        txtAddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 450, 210, 25));
 
         btnBack.setBackground(new java.awt.Color(102, 102, 102));
         btnBack.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
@@ -146,55 +142,53 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 519, 100, 40));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 100, 40));
 
         txtHS.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
         txtHS.setForeground(new java.awt.Color(204, 204, 204));
-        txtHS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 2));
-        add(txtHS, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 240, 25));
+        txtHS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        add(txtHS, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 470, 210, 25));
 
         txtHS1.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
         txtHS1.setForeground(new java.awt.Color(204, 204, 204));
-        txtHS1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 2));
-        add(txtHS1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 240, 25));
+        txtHS1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        add(txtHS1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 210, 25));
 
         txtHS2.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
         txtHS2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(txtHS2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 240, 25));
+        add(txtHS2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 210, 25));
 
         txtHS3.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
         txtHS3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(txtHS3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 240, 25));
+        add(txtHS3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 210, 25));
 
         txtHS4.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
         txtHS4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(txtHS4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 220, 240, 25));
+        add(txtHS4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 210, 25));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(204, 204, 204));
         jLabel1.setText("Applicant Details");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 150, 20));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, 150, 20));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
         jLabel2.setText("Seeking Admission for:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, -1, 20));
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
         jLabel3.setText("Bachelor's Degree Information");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 240, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 240, -1));
 
         txtHS5.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
         txtHS5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(txtHS5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 370, 240, 25));
+        add(txtHS5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 210, 25));
 
         txtHS6.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
         txtHS6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(txtHS6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 240, 25));
+        add(txtHS6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 210, 25));
 
         txtHS7.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
         txtHS7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(txtHS7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, 240, 25));
+        add(txtHS7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 210, 25));
 
         submitJButton.setBackground(new java.awt.Color(102, 102, 102));
         submitJButton.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
@@ -204,7 +198,7 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 540, 120, 40));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 620, 120, 40));
 
         rejectJButton.setBackground(new java.awt.Color(102, 102, 102));
         rejectJButton.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
@@ -214,22 +208,21 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
                 rejectJButtonActionPerformed(evt);
             }
         });
-        add(rejectJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 540, 100, 40));
+        add(rejectJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 620, 100, 40));
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("High School Information");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 200, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 440, 200, -1));
 
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Graduation Request Process Admin Portal");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 66, 380, 40));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 70, 380, 40));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin3.jpeg"))); // NOI18N
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 610));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 670));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed

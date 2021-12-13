@@ -76,6 +76,7 @@ public class ManageCitizens extends javax.swing.JPanel {
         buttonDelete = new javax.swing.JToggleButton();
         txtCitName = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -101,32 +102,48 @@ public class ManageCitizens extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblViewAllCitizen);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 820, 185));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 740, 90));
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel6.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("View Citizens");
+        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel6.setFocusable(false);
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
+        jLabel6.setOpaque(true);
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, 230, 50));
 
-        jButton1.setText("<< Back");
+        jButton1.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
+        jButton1.setText("Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 140, 30));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 460, 150, 30));
 
+        buttonDelete.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         buttonDelete.setText("Delete Citizen");
+        buttonDelete.setOpaque(true);
         buttonDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonDeleteActionPerformed(evt);
             }
         });
-        add(buttonDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 390, 140, -1));
-        add(txtCitName, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 210, 30));
+        add(buttonDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 150, 30));
 
-        jLabel1.setText("Enter Citizen Name:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 306, -1, 20));
+        txtCitName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtCitName, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 350, 150, 30));
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("Enter Citizen Name : ");
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel1.setOpaque(true);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, 150, 30));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manageorganization.jpeg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 880, 660));
     }// </editor-fold>//GEN-END:initComponents
 
      
@@ -182,6 +199,7 @@ public class ManageCitizens extends javax.swing.JPanel {
     private javax.swing.JToggleButton buttonDelete;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblViewAllCitizen;

@@ -65,33 +65,51 @@ public class AddTempListingJPanel extends javax.swing.JPanel {
         txtNumber = new javax.swing.JTextField();
         BtnAdd = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Add Temp Listing ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 28, -1, -1));
+        jLabel1.setText("Add Houses for Rent");
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel1.setOpaque(true);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 28, 460, 40));
 
+        jLabel2.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("Housing Society Name :");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 88, -1, -1));
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 84, 315, -1));
+        jLabel2.setOpaque(true);
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 150, 30));
 
+        txtName.setBackground(new java.awt.Color(204, 204, 204));
+        txtName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 220, 30));
+
+        jLabel3.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("Number Of People :");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, -1, -1));
-        add(txtNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 156, 315, -1));
+        jLabel3.setOpaque(true);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 150, 30));
 
-        BtnAdd.setBackground(new java.awt.Color(20, 53, 94));
+        txtNumber.setBackground(new java.awt.Color(204, 204, 204));
+        txtNumber.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        add(txtNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 220, 30));
+
+        BtnAdd.setBackground(new java.awt.Color(51, 51, 51));
+        BtnAdd.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
+        BtnAdd.setForeground(new java.awt.Color(255, 255, 255));
         BtnAdd.setText("Add");
         BtnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnAddActionPerformed(evt);
             }
         });
-        add(BtnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 130, -1));
+        add(BtnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 150, 30));
 
-        btnBack.setBackground(new java.awt.Color(20, 53, 94));
+        btnBack.setBackground(new java.awt.Color(51, 51, 51));
+        btnBack.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("<<Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -99,7 +117,10 @@ public class AddTempListingJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 110, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 150, 30));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/houses.jpeg"))); // NOI18N
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 4, 990, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAddActionPerformed
@@ -152,6 +173,7 @@ public class AddTempListingJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtNumber;
     // End of variables declaration//GEN-END:variables

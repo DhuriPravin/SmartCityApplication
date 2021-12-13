@@ -185,7 +185,7 @@ public class RequestVocTrainingJPanel extends javax.swing.JPanel {
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fp.jpeg"))); // NOI18N
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 620));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 660));
     }// </editor-fold>//GEN-END:initComponents
 
     private void coursesComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coursesComboBoxActionPerformed
