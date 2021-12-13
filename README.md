@@ -7,3 +7,5 @@ This application has all the below features under one roof <br>
 **Housing Application <br>**
 **Job Recommendation<br>**
 **Tourism Application <br>**
+
+Note: Please add JAR files before running the project
