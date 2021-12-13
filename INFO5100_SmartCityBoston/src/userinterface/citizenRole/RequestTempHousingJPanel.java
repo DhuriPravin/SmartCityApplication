@@ -74,21 +74,21 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
         jLabel1.setText("Number Of Members :  ");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel1.setOpaque(true);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 120, 25));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 120, 25));
 
         housingSocietyComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(housingSocietyComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, 130, 25));
+        add(housingSocietyComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 390, 130, 25));
 
         jLabel2.setBackground(new java.awt.Color(153, 153, 153));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Society :  ");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel2.setOpaque(true);
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 120, 25));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, 120, 25));
 
         NumberComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
         NumberComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(NumberComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 130, 25));
+        add(NumberComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, 130, 25));
 
         btnRequest.setBackground(new java.awt.Color(153, 51, 0));
         btnRequest.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -99,17 +99,17 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
                 btnRequestActionPerformed(evt);
             }
         });
-        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 220, 40));
+        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 480, 220, 40));
 
         txtMessage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(txtMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 130, 25));
+        add(txtMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 440, 130, 25));
 
         jLabel4.setBackground(new java.awt.Color(153, 153, 153));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Message : ");
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel4.setOpaque(true);
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 120, 25));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, 120, 25));
 
         btnback.setBackground(new java.awt.Color(153, 51, 0));
         btnback.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -120,7 +120,7 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
                 btnbackActionPerformed(evt);
             }
         });
-        add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, 100, 40));
+        add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 590, 100, 40));
 
         jLabel5.setBackground(new java.awt.Color(153, 153, 153));
         jLabel5.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
@@ -129,7 +129,7 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel5.setFocusable(false);
         jLabel5.setOpaque(true);
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 390, 30));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, 390, 30));
 
         jLabel3.setBackground(new java.awt.Color(153, 153, 153));
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -137,11 +137,11 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
         jLabel3.setText("  You can Afford to Dwell Well ! Apply for Short Term Housing, mentione and housing society .");
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel3.setOpaque(true);
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 580, 30));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 580, 30));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/34.jpeg"))); // NOI18N
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 490));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 910, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestActionPerformed

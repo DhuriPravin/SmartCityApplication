@@ -227,7 +227,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 570, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 680, Short.MAX_VALUE)
         );
 
         jSplitPane.setLeftComponent(jPanel1);
@@ -237,15 +237,14 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Selected Node:");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 100, 20));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 120, 20));
 
-        lblSelectedNode.setForeground(new java.awt.Color(255, 255, 255));
+        lblSelectedNode.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblSelectedNode.setText("<View_selected_node>");
-        jPanel2.add(lblSelectedNode, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, -1, 20));
+        jPanel2.add(lblSelectedNode, new org.netbeans.lib.awtextra.AbsoluteConstraints(262, 90, 160, 20));
 
-        btnManageNetwork.setBackground(new java.awt.Color(20, 53, 94));
+        btnManageNetwork.setBackground(new java.awt.Color(102, 102, 102));
         btnManageNetwork.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnManageNetwork.setForeground(new java.awt.Color(0, 51, 102));
         btnManageNetwork.setText("Manage Network");
@@ -256,7 +255,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 200, 30));
 
-        btnManageEnterprise.setBackground(new java.awt.Color(20, 53, 94));
+        btnManageEnterprise.setBackground(new java.awt.Color(102, 102, 102));
         btnManageEnterprise.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnManageEnterprise.setForeground(new java.awt.Color(0, 51, 102));
         btnManageEnterprise.setText("Manage Enterprise");
@@ -267,7 +266,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 200, 30));
 
-        btnManageAdmin.setBackground(new java.awt.Color(20, 53, 94));
+        btnManageAdmin.setBackground(new java.awt.Color(102, 102, 102));
         btnManageAdmin.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnManageAdmin.setForeground(new java.awt.Color(0, 51, 102));
         btnManageAdmin.setText("Manage Enterprise Admin");
@@ -278,7 +277,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 200, 30));
 
-        btnRegisterCitizen.setBackground(new java.awt.Color(20, 53, 94));
+        btnRegisterCitizen.setBackground(new java.awt.Color(102, 102, 102));
         btnRegisterCitizen.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnRegisterCitizen.setForeground(new java.awt.Color(0, 51, 102));
         btnRegisterCitizen.setText("Register Citizen");
@@ -289,7 +288,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(btnRegisterCitizen, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 200, 30));
 
-        btnViewAllCitizen.setBackground(new java.awt.Color(20, 53, 94));
+        btnViewAllCitizen.setBackground(new java.awt.Color(102, 102, 102));
         btnViewAllCitizen.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnViewAllCitizen.setForeground(new java.awt.Color(0, 51, 102));
         btnViewAllCitizen.setText("View All Citizens");
@@ -301,13 +300,12 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel2.add(btnViewAllCitizen, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 200, 30));
         jPanel2.add(pictureArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 340, 70));
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Citizen Services");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 140, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, 160, -1));
 
-        buttonManage.setBackground(new java.awt.Color(20, 53, 94));
+        buttonManage.setBackground(new java.awt.Color(102, 102, 102));
         buttonManage.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         buttonManage.setForeground(new java.awt.Color(0, 51, 102));
         buttonManage.setText("Delete Citizen");
@@ -318,9 +316,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(buttonManage, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 200, 30));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/17369969b4211106219441dc5f06b8d2.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sysadmin.jpeg"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 570));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 680));
 
         jSplitPane.setRightComponent(jPanel2);
 

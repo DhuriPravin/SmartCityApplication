@@ -61,6 +61,8 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(255, 255, 255));
@@ -97,10 +99,14 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
             networkJTable.getColumnModel().getColumn(0).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 404, 91));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, 350, 90));
 
+        jLabel1.setBackground(new java.awt.Color(139, 113, 159));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Add Network");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 350, 30));
+        jLabel1.setOpaque(true);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, 230, 30));
 
         submitJButton.setBackground(new java.awt.Color(20, 53, 94));
         submitJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -110,8 +116,12 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 150, -1));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 330, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 590, 150, 30));
+
+        nameJTextField.setBackground(new java.awt.Color(204, 204, 204));
+        nameJTextField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        nameJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 550, 280, 30));
 
         backJButton.setBackground(new java.awt.Color(20, 53, 94));
         backJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -121,15 +131,31 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 150, 30));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel6.setText("Manage Network");
         jLabel6.setFocusable(false);
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
-        jLabel2.setText("City Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, -1, 30));
+        jLabel2.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("City Name : ");
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel2.setOpaque(true);
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 550, 80, 30));
+
+        jLabel8.setBackground(new java.awt.Color(139, 113, 159));
+        jLabel8.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Manage Network");
+        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel8.setFocusable(false);
+        jLabel8.setOpaque(true);
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 250, 40));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manage.jpeg"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
@@ -156,7 +182,9 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backJButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField nameJTextField;
     private javax.swing.JTable networkJTable;

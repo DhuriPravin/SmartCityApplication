@@ -85,8 +85,7 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
         permhousingrequestjButton = new javax.swing.JButton();
         VocationalRequestJButton = new javax.swing.JButton();
         GradRequestJButton = new javax.swing.JButton();
-        PhysicalHealthCareRequestJButton = new javax.swing.JButton();
-        MentalHealthCareJButton = new javax.swing.JButton();
+        TourismJButton = new javax.swing.JButton();
         txtWelcome = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         permhousingrequestjButton1 = new javax.swing.JButton();
@@ -97,7 +96,6 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
@@ -150,29 +148,17 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(GradRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 280, 30));
 
-        PhysicalHealthCareRequestJButton.setBackground(new java.awt.Color(169, 95, 100));
-        PhysicalHealthCareRequestJButton.setForeground(new java.awt.Color(255, 255, 255));
-        PhysicalHealthCareRequestJButton.setText("Click to Your next favourite Tourism site!");
-        PhysicalHealthCareRequestJButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        PhysicalHealthCareRequestJButton.setPreferredSize(new java.awt.Dimension(152, 32));
-        PhysicalHealthCareRequestJButton.addActionListener(new java.awt.event.ActionListener() {
+        TourismJButton.setBackground(new java.awt.Color(169, 95, 100));
+        TourismJButton.setForeground(new java.awt.Color(255, 255, 255));
+        TourismJButton.setText("Click to Your next favourite Tourism site!");
+        TourismJButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        TourismJButton.setPreferredSize(new java.awt.Dimension(152, 32));
+        TourismJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PhysicalHealthCareRequestJButtonActionPerformed(evt);
+                TourismJButtonActionPerformed(evt);
             }
         });
-        add(PhysicalHealthCareRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 560, 270, 30));
-
-        MentalHealthCareJButton.setBackground(new java.awt.Color(169, 95, 100));
-        MentalHealthCareJButton.setForeground(new java.awt.Color(255, 255, 255));
-        MentalHealthCareJButton.setText("Click here to view Job Opportunities");
-        MentalHealthCareJButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        MentalHealthCareJButton.setPreferredSize(new java.awt.Dimension(152, 32));
-        MentalHealthCareJButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MentalHealthCareJButtonActionPerformed(evt);
-            }
-        });
-        add(MentalHealthCareJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 280, 30));
+        add(TourismJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 270, 30));
 
         txtWelcome.setBackground(new java.awt.Color(255, 255, 255));
         txtWelcome.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
@@ -243,7 +229,7 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 220, 300, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Plan ahead for higher education, apply for accomodation, apply for job or plan your trip all through this portal!");
+        jLabel2.setText("Plan ahead for higher education, apply for accomodation or plan your trip all through this portal!");
         jLabel2.setOpaque(true);
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 750, -1));
 
@@ -261,19 +247,12 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
         jLabel5.setOpaque(true);
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 330, 25));
 
-        jLabel8.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Find your Right Job Today!!!");
-        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jLabel8.setOpaque(true);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 330, 25));
-
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Make your Bookings to roam around the City!");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         jLabel1.setOpaque(true);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 330, 25));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 330, 25));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/b1.png"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -312,19 +291,11 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
     }//GEN-LAST:event_GradRequestJButtonActionPerformed
 
-    private void PhysicalHealthCareRequestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PhysicalHealthCareRequestJButtonActionPerformed
-
-//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-//        userProcessContainer.add("Request_PHC_JPanel", new Request_PHC_JPanel(userProcessContainer, userAccount, cd, system));
-//        layout.next(userProcessContainer);
-    }//GEN-LAST:event_PhysicalHealthCareRequestJButtonActionPerformed
-
-    private void MentalHealthCareJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MentalHealthCareJButtonActionPerformed
-        // TODO add your handling code here:
-//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-//        userProcessContainer.add("Request_MHC_JPanel", new Request_MHC_JPanel(userProcessContainer, userAccount, cd, system));
-//        layout.next(userProcessContainer);
-    }//GEN-LAST:event_MentalHealthCareJButtonActionPerformed
+    private void TourismJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TourismJButtonActionPerformed
+//  CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+//    userProcessContainer.add("RegisterTour", new RegisterTour(userProcessContainer, userAccount, cd, system));
+//       layout.next(userProcessContainer);
+    }//GEN-LAST:event_TourismJButtonActionPerformed
 
     private void permhousingrequestjButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_permhousingrequestjButton1ActionPerformed
         // TODO add your handling code here:
@@ -410,8 +381,7 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton GradRequestJButton;
-    private javax.swing.JButton MentalHealthCareJButton;
-    private javax.swing.JButton PhysicalHealthCareRequestJButton;
+    private javax.swing.JButton TourismJButton;
     private javax.swing.JButton VocationalRequestJButton;
     private javax.swing.JTable eduRequestsTable;
     private javax.swing.JLabel jLabel1;
@@ -421,7 +391,6 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton permhousingrequestjButton;
     private javax.swing.JButton permhousingrequestjButton1;

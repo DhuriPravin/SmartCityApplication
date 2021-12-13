@@ -146,7 +146,7 @@ public class RequestPermHousingJPanel extends javax.swing.JPanel {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/housing4.jpeg"))); // NOI18N
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 560));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 660));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed

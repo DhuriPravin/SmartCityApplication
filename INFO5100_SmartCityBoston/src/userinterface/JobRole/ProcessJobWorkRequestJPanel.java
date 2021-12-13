@@ -55,7 +55,7 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         txtCandidateName = new javax.swing.JTextField();
         btnback = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -64,47 +64,52 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Process Job Request - Admin portal");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 490, 40));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 490, 40));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Suggested Job Role : ");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 150, 25));
+        jLabel2.setOpaque(true);
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 150, 25));
 
         txtJobRole.setEditable(false);
         txtJobRole.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(txtJobRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, 150, 25));
+        add(txtJobRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, 150, 25));
 
-        btnApprove.setBackground(new java.awt.Color(20, 53, 94));
+        btnApprove.setBackground(new java.awt.Color(51, 51, 51));
+        btnApprove.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnApprove.setText("Approve");
         btnApprove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnApproveActionPerformed(evt);
             }
         });
-        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 100, 50));
+        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 420, 100, 40));
 
-        btnReject.setBackground(new java.awt.Color(20, 53, 94));
+        btnReject.setBackground(new java.awt.Color(51, 51, 51));
+        btnReject.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnReject.setText("Reject");
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectActionPerformed(evt);
             }
         });
-        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 110, 50));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, 110, 40));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Comments : ");
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 150, 25));
+        jLabel3.setOpaque(true);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 150, 25));
 
         txtComment.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(txtComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, 150, 25));
+        add(txtComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 240, 150, 25));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Candidate Name : ");
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 150, 25));
+        jLabel4.setOpaque(true);
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 150, 25));
 
         txtCandidateName.setEditable(false);
         txtCandidateName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -113,20 +118,20 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
                 txtCandidateNameActionPerformed(evt);
             }
         });
-        add(txtCandidateName, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 150, 25));
+        add(txtCandidateName, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, 150, 25));
 
-        btnback.setBackground(new java.awt.Color(20, 53, 94));
+        btnback.setBackground(new java.awt.Color(51, 51, 51));
+        btnback.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnback.setText("Back");
         btnback.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbackActionPerformed(evt);
             }
         });
-        add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 100, 50));
+        add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 100, 50));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MicrosoftTeams-image.png"))); // NOI18N
-        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 580));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin2.jpeg"))); // NOI18N
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1000, 640));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnApproveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApproveActionPerformed
@@ -174,7 +179,7 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField txtCandidateName;
     private javax.swing.JTextField txtComment;
     private javax.swing.JTextField txtJobRole;
