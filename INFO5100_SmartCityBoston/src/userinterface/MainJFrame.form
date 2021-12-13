@@ -34,7 +34,6 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel8" min="-2" pref="357" max="-2" attributes="0"/>
-                              <Component id="jLabel4" alignment="0" min="-2" pref="357" max="-2" attributes="0"/>
                               <Component id="jLabel6" alignment="0" min="-2" pref="367" max="-2" attributes="0"/>
                               <Component id="jLabel7" alignment="0" min="-2" pref="338" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
@@ -43,6 +42,7 @@
                                       <Component id="jLabel9" alignment="0" min="-2" pref="398" max="-2" attributes="0"/>
                                       <Component id="jLabel11" alignment="0" min="-2" pref="383" max="-2" attributes="0"/>
                                       <Component id="jLabel10" alignment="0" min="-2" pref="398" max="-2" attributes="0"/>
+                                      <Component id="jLabel4" alignment="0" min="-2" pref="357" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>

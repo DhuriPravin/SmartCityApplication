@@ -346,16 +346,7 @@ public class RegisterCitizen extends javax.swing.JPanel {
         c.setUsername(txtUsername.getText());
         c.setPassword(password);
         JOptionPane.showMessageDialog(null, "Citizen Registered Successfully!");
-        txtFirstName.setText("");
-        txtLastName.setText("");
-        txtAge.setText("");
-        txtEmail.setText("");
-        txtEducationDetails.setText("");
-        txtEmail.setText("");
-        txtResAddress.setText("");
-        txtCitizenID.setText("");
-        txtUsername.setText("");
-        txtPassword.setText("");
+
 
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -440,7 +440,8 @@ public class TempHousingWorkAreaJPanel extends javax.swing.JPanel {
             txtPending1.setText(Integer.toString(pendingRequestsUser));
 
             txtWelcome.setText("Welcome back, " + userAccount.getEmployee().getEmployeeName() + "! There are " + (Integer.toString(unassignedRequests)) + " unassigned request(s) for review & " + (Integer.toString(pendingRequests)) + " in your queue.");
-
+            
+            txtAvlHouses.setText(Integer.toString(CalculateAvailableHouses()));
         
                 
             }

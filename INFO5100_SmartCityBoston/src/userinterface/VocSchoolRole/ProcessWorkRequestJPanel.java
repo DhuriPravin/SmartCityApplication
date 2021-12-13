@@ -194,12 +194,12 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         });
         add(btnRecommendForJob, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 550, 170, 30));
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("View and Process Passion Request - Admin Access");
+        jLabel1.setText("View and Process Vocational Course Request - Admin Access");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jLabel1.setOpaque(true);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 650, 50));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 760, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin3.jpeg"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));

@@ -116,7 +116,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 590, 150, 30));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 590, 150, 30));
 
         nameJTextField.setBackground(new java.awt.Color(204, 204, 204));
         nameJTextField.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -131,7 +131,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 150, 30));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 590, 150, 30));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel6.setFocusable(false);
@@ -155,7 +155,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 250, 40));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manage.jpeg"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 650));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed

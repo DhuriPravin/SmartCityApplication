@@ -247,7 +247,7 @@ public class RequestGradJPanel extends javax.swing.JPanel {
         txtRecommend.setBackground(new java.awt.Color(20, 53, 94));
         txtRecommend.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         txtRecommend.setForeground(new java.awt.Color(20, 53, 94));
-        add(txtRecommend, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 580, 31));
+        add(txtRecommend, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 580, 31));
 
         txtRecommend1.setBackground(new java.awt.Color(20, 53, 94));
         txtRecommend1.setForeground(new java.awt.Color(20, 53, 94));
@@ -315,7 +315,7 @@ public class RequestGradJPanel extends javax.swing.JPanel {
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/graduation.png.jpg"))); // NOI18N
         jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 650));
+        add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 670));
     }// </editor-fold>//GEN-END:initComponents
 
     private void highSchoolCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_highSchoolCheckActionPerformed

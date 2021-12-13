@@ -80,14 +80,14 @@ public class RequestVocTrainingJPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Apply for Passion Courses");
+        jLabel1.setText("Apply for Vocational Courses");
         jLabel1.setFocusable(false);
         jLabel1.setOpaque(true);
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 301, 40));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Ignite Your Passion!!!  Passion courses offer relatively short, career-focused programs that quickly prepare you for the workforce.");
+        jLabel2.setText("Ignite Your Passion!!!  Vocational courses offer relatively short, career-focused programs that quickly prepare you for the workforce.");
         jLabel2.setFocusable(false);
         jLabel2.setOpaque(true);
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 620, 23));
@@ -95,7 +95,7 @@ public class RequestVocTrainingJPanel extends javax.swing.JPanel {
         fundingAssistanceComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
         fundingAssistanceComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         fundingAssistanceComboBox.setPreferredSize(new java.awt.Dimension(30, 25));
-        add(fundingAssistanceComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 169, -1));
+        add(fundingAssistanceComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, 169, -1));
 
         campusComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Online", "Boston", "New Jersey", "Phoenix" }));
         campusComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -105,7 +105,7 @@ public class RequestVocTrainingJPanel extends javax.swing.JPanel {
                 campusComboBoxActionPerformed(evt);
             }
         });
-        add(campusComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 190, 169, -1));
+        add(campusComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, 169, -1));
 
         coursesComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Photography", "Baking", "Painting", "Music", "Dance" }));
         coursesComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -115,12 +115,12 @@ public class RequestVocTrainingJPanel extends javax.swing.JPanel {
                 coursesComboBoxActionPerformed(evt);
             }
         });
-        add(coursesComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 136, 169, -1));
+        add(coursesComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 169, -1));
 
         educationComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "High School", "High School Diploma", "Bachelors", "Masters" }));
         educationComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         educationComboBox.setPreferredSize(new java.awt.Dimension(30, 25));
-        add(educationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, 169, -1));
+        add(educationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 390, 169, -1));
 
         txtSubmit.setBackground(new java.awt.Color(51, 51, 51));
         txtSubmit.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
@@ -131,46 +131,46 @@ public class RequestVocTrainingJPanel extends javax.swing.JPanel {
                 txtSubmitActionPerformed(evt);
             }
         });
-        add(txtSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, 179, 33));
+        add(txtSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 550, 179, 33));
 
         txtAdditionalSkills.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtAdditionalSkills.setPreferredSize(new java.awt.Dimension(30, 25));
-        add(txtAdditionalSkills, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, 169, -1));
+        add(txtAdditionalSkills, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 470, 169, -1));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Area of Interest : ");
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel3.setOpaque(true);
         jLabel3.setPreferredSize(new java.awt.Dimension(150, 25));
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 136, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 170, -1));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Campus : ");
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel4.setOpaque(true);
         jLabel4.setPreferredSize(new java.awt.Dimension(150, 25));
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 170, -1));
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Highest Qualification : ");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel5.setOpaque(true);
         jLabel5.setPreferredSize(new java.awt.Dimension(150, 25));
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 170, -1));
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel6.setText("Funding Required? : ");
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel6.setOpaque(true);
         jLabel6.setPreferredSize(new java.awt.Dimension(150, 25));
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 170, -1));
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel7.setText("Additional Information : ");
         jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel7.setOpaque(true);
         jLabel7.setPreferredSize(new java.awt.Dimension(150, 25));
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 170, -1));
 
         backJButton.setBackground(new java.awt.Color(51, 51, 51));
         backJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
@@ -181,11 +181,11 @@ public class RequestVocTrainingJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 563, -1, 30));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, -1, 30));
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fp.jpeg"))); // NOI18N
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 660));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/passion.jpeg"))); // NOI18N
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 660));
     }// </editor-fold>//GEN-END:initComponents
 
     private void coursesComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coursesComboBoxActionPerformed

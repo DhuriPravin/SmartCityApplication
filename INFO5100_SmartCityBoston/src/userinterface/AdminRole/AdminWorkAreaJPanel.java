@@ -96,7 +96,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel8.setText("Admin Manage Portal ");
         jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel8.setFocusable(false);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 360, 40));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 360, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin4.jpeg"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
