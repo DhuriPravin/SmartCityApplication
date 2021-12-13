@@ -102,7 +102,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         String USER_HEADER = "Sender,receiver,requestDate,resolveDate,status,desUni,desProgram,bachGrade,hsGrade,bachProg";
         String LINE_BREAK = "\n";
-        String USER_CAT_PATH = "C:/Users/manis/OneDrive/Documents/NetBeansProjects/INFO5100_SmartCityBoston_final/gradStats.csv";
+        String USER_CAT_PATH = "/Users/pravin/Downloads/SmartCityApplication-main/gradStats.csv";
 
         file = new File(USER_CAT_PATH);
         if (file.exists()) {
@@ -144,7 +144,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         String USER_HEADER = "org,sender,receiver,requestDate,resolvedDate,status";
         String LINE_BREAK = "\n";
-        String USER_CAT_PATH = "C:/Users/manis/OneDrive/Documents/NetBeansProjects/INFO5100_SmartCityBoston_final/stats.csv";
+        String USER_CAT_PATH = "/Users/pravin/Downloads/SmartCityApplication-main/stats.csv";
 
         file = new File(USER_CAT_PATH);
         if (file.exists()) {

@@ -36,7 +36,7 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form PermHousingWorkAreaJPanel
      */
-    public PermHousingWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization permHousingOrganization, Enterprise enterprise, CitizensDirectory cd,EcoSystem business) {
+    public PermHousingWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization permHousingOrganization, Enterprise enterprise, CitizensDirectory cd, EcoSystem business) {
         initComponents();
         this.processContainer = userProcessContainer;
         this.userAccount = account;
@@ -45,16 +45,13 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
         this.enterprise = enterprise;
         this.cd = cd;
         int availability = business.getHld().getTotal_count();
-        for(HouseListings hs : business.getHld().getHouseListing_Dir())
-        {
-            if(hs.getAvailability()==1)
-            {
-                availability = availability -1;
+        for (HouseListings hs : business.getHld().getHouseListing_Dir()) {
+            if (hs.getAvailability() == 1) {
+                availability = availability - 1;
             }
         }
         AvailableHousesText.setText(Integer.toString(availability));
         populateTable();
-
 
     }
 
@@ -400,7 +397,7 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
 
     }//GEN-LAST:event_assignJButtonActionPerformed
 
-    
+
     private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
 
         int selectedRow = workRequestJTable.getSelectedRow();
@@ -413,7 +410,7 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
 
         request.setStatus("Processing");
 
-        ProcessPermWorkRequestJPanel processWorkRequestJPanel = new ProcessPermWorkRequestJPanel(processContainer, request,business);
+        ProcessPermWorkRequestJPanel processWorkRequestJPanel = new ProcessPermWorkRequestJPanel(processContainer, request, business);
         processContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
         CardLayout layout = (CardLayout) processContainer.getLayout();
         layout.next(processContainer);
@@ -423,7 +420,7 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
     private void addpermhousingjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addpermhousingjButtonActionPerformed
         // TODO add your handling code here:
         CardLayout layout = (CardLayout) processContainer.getLayout();
-        processContainer.add("AddListingJPanel", new AddListingJPanel(processContainer, userAccount,permHousingOrganization,enterprise, cd, business));
+        processContainer.add("AddListingJPanel", new AddListingJPanel(processContainer, userAccount, permHousingOrganization, enterprise, cd, business));
         layout.next(processContainer);
     }//GEN-LAST:event_addpermhousingjButtonActionPerformed
 
@@ -445,7 +442,7 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
         int rejectedRequestsUser = 0;
         int pendingRequestsUser = 0;
         int unassignedReq = 0;
-        
+
         DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
 
         model.setRowCount(0);
@@ -453,21 +450,19 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
 
         for (WorkRequest request : permHousingOrganization.getWorkQueue().getWorkRequestList()) {
             System.out.println("Inside LOOP");
-            if (request instanceof PermHousingRequest)
-            {
-                
-            Object[] row = new Object[8];
-            row[0] = request;
-            row[1] = request.getSender();
-            row[2] = request.getReceiver() == null ? null : request.getReceiver().getEmployee().getEmployeeName();
-            row[3] = ((PermHousingRequest) request).getArea();
-            row[4] = ((PermHousingRequest) request).getCity();
-            row[5] = ((PermHousingRequest) request).getDoorNumber();
-            row[6] = ((PermHousingRequest) request).getPinCode();
-            row[7] = ((PermHousingRequest) request).getStatus();
-            //model.addRow(row);
-            
-            if (request.getReceiver() == null) {
+            if (request instanceof PermHousingRequest) {
+
+                Object[] row = new Object[8];
+                row[0] = request;
+                row[1] = request.getSender();
+                row[2] = request.getReceiver() == null ? null : request.getReceiver().getEmployee().getEmployeeName();
+                row[3] = ((PermHousingRequest) request).getArea();
+                row[4] = ((PermHousingRequest) request).getCity();
+                row[5] = ((PermHousingRequest) request).getDoorNumber();
+                row[6] = ((PermHousingRequest) request).getPinCode();
+                row[7] = ((PermHousingRequest) request).getStatus();
+
+                if (request.getReceiver() == null) {
                     unassignedReq = unassignedReq + 1;
                 } else if (request.getReceiver().getEmployee().equals(userAccount.getEmployee())) {
                     totalRequestsUser = totalRequestsUser + 1;
@@ -490,7 +485,7 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
                 }
 
                 model.addRow(row);
-                
+
             }
             txtTotalRequests.setText(Integer.toString(totalRequests));
             txtAccepted.setText(Integer.toString(acceptedRequests));
@@ -504,7 +499,15 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
 
             txtWelcome.setText("Welcome back, " + userAccount.getEmployee().getEmployeeName() + ". There are " + (Integer.toString(unassignedReq)) + " unassigned request(s) for review & " + (Integer.toString(pendingRequests)) + " in your queue.");
 
-        
+            int availability = business.getHld().getTotal_count();
+            for (HouseListings hs : business.getHld().getHouseListing_Dir()) {
+                if (hs.getAvailability() == 1) {
+                    availability = availability - 1;
+                }
+            }
+            AvailableHousesText.setText(Integer.toString(availability));
+            
+
         }
     }
 

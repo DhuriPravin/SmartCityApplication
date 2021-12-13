@@ -14,8 +14,11 @@ import Business.Organization.Organization;
 import Business.Organization.PermHousingOrganization;
 import Business.UserAccount.UserAccount;
 import Business.Citizen.CitizensDirectory;
+import java.awt.CardLayout;
+import java.awt.Component;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import userinterface.TemporaryHousing.TempHousingWorkAreaJPanel;
 
 /**
  *
@@ -26,7 +29,7 @@ public class AddListingJPanel extends javax.swing.JPanel {
     /**
      * Creates new form AddListingJPanel
      */
-    private JPanel userProcessContainer;
+    private JPanel processContainer;
     private EcoSystem business;
     private UserAccount userAccount;
     private final PermHousingOrganization permHousingOrganization;
@@ -38,7 +41,7 @@ public class AddListingJPanel extends javax.swing.JPanel {
  {
         initComponents();
         //hsd = new HouseListingDirectory();
-        this.userProcessContainer = userProcessContainer;
+        this.processContainer = userProcessContainer;
         this.userAccount = account;
         this.business = business;
         this.permHousingOrganization = (PermHousingOrganization) permHousingOrganization;
@@ -232,6 +235,13 @@ public class AddListingJPanel extends javax.swing.JPanel {
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
+        processContainer.remove(this);
+        Component[] componentArray = processContainer.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        PermHousingWorkAreaJPanel dwjp = (PermHousingWorkAreaJPanel) component;
+        dwjp.populateTable();
+        CardLayout layout = (CardLayout) processContainer.getLayout();
+        layout.previous(processContainer);
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void txtDoorNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDoorNumberActionPerformed

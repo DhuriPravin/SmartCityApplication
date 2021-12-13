@@ -151,7 +151,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 500, 140, 30));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 500, 140, 30));
 
         backJButton.setBackground(new java.awt.Color(102, 102, 102));
         backJButton.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -172,7 +172,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         jLabel6.setFocusable(false);
         jLabel6.setOpaque(true);
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 12, 230, 40));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 20, 230, 40));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manageorganization.jpeg"))); // NOI18N
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, -40, 1150, 700));

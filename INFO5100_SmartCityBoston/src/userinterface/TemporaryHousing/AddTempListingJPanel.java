@@ -29,7 +29,7 @@ public class AddTempListingJPanel extends javax.swing.JPanel {
     /**
      * Creates new form AddTempListingJPanel
      */
-    private JPanel userProcessContainer;
+    private JPanel processContainer;
     private EcoSystem business;
     private UserAccount userAccount;
     private final TempHousingOrganization tempHousingOrganization;
@@ -41,7 +41,7 @@ public class AddTempListingJPanel extends javax.swing.JPanel {
  {
         initComponents();
         //hsd = new HouseListingDirectory();
-        this.userProcessContainer = userProcessContainer;
+        this.processContainer = userProcessContainer;
         this.userAccount = account;
         this.business = business;
         this.tempHousingOrganization = (TempHousingOrganization) tempHousingOrganization;
@@ -157,13 +157,13 @@ public class AddTempListingJPanel extends javax.swing.JPanel {
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
-        userProcessContainer.remove(this);
-        Component[] componentArray = userProcessContainer.getComponents();
+        processContainer.remove(this);
+        Component[] componentArray = processContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
         TempHousingWorkAreaJPanel dwjp = (TempHousingWorkAreaJPanel) component;
         dwjp.populateTempTable();
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.previous(userProcessContainer);
+        CardLayout layout = (CardLayout) processContainer.getLayout();
+        layout.previous(processContainer);
     }//GEN-LAST:event_btnBackActionPerformed
 
 

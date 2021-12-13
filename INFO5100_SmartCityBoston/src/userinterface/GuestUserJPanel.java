@@ -57,7 +57,6 @@ CitizensDirectory citizens_Di;
 
         jLabel1 = new javax.swing.JLabel();
         RegisterCitizenButton = new javax.swing.JButton();
-        ViewAllCitizensButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -80,17 +79,6 @@ CitizensDirectory citizens_Di;
         });
         add(RegisterCitizenButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 245, 40));
 
-        ViewAllCitizensButton.setBackground(new java.awt.Color(43, 0, 0));
-        ViewAllCitizensButton.setFont(new java.awt.Font("Sitka Small", 3, 18)); // NOI18N
-        ViewAllCitizensButton.setForeground(new java.awt.Color(255, 255, 255));
-        ViewAllCitizensButton.setText("View Citizens");
-        ViewAllCitizensButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ViewAllCitizensButtonActionPerformed(evt);
-            }
-        });
-        add(ViewAllCitizensButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 244, 40));
-
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Loginframe.jpeg"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 710));
@@ -104,18 +92,9 @@ CitizensDirectory citizens_Di;
         layout.next(container);
     }//GEN-LAST:event_RegisterCitizenButtonActionPerformed
 
-    private void ViewAllCitizensButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewAllCitizensButtonActionPerformed
-        // TODO add your handling code here:
-        ViewAllCitizens vc = new ViewAllCitizens(container, system, citizens_Di);
-        container.add("ViewAllCitizens", vc);
-        CardLayout layout = (CardLayout) container.getLayout();
-        layout.next(container);
-    }//GEN-LAST:event_ViewAllCitizensButtonActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton RegisterCitizenButton;
-    private javax.swing.JButton ViewAllCitizensButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables

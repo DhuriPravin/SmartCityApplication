@@ -28,6 +28,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import userinterface.BackgroundPanel;
+import userinterface.Tourism.RegisterTour;
 
 
 /**
@@ -252,7 +253,7 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
         jLabel1.setText("Make your Bookings to roam around the City!");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         jLabel1.setOpaque(true);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 330, 25));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 350, 25));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/b1.png"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -292,9 +293,9 @@ public class CitizenWorkAreaJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_GradRequestJButtonActionPerformed
 
     private void TourismJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TourismJButtonActionPerformed
-//  CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-//    userProcessContainer.add("RegisterTour", new RegisterTour(userProcessContainer, userAccount, cd, system));
-//       layout.next(userProcessContainer);
+  CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+  userProcessContainer.add("RegisterTour", new RegisterTour(userProcessContainer, userAccount, cd, system));
+  layout.next(userProcessContainer);
     }//GEN-LAST:event_TourismJButtonActionPerformed
 
     private void permhousingrequestjButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_permhousingrequestjButton1ActionPerformed

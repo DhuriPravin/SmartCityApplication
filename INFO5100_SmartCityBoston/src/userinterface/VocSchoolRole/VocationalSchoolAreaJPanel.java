@@ -125,7 +125,7 @@ public class VocationalSchoolAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 680, 90));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 680, 90));
 
         refreshJButton.setBackground(new java.awt.Color(102, 102, 102));
         refreshJButton.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
@@ -172,7 +172,7 @@ public class VocationalSchoolAreaJPanel extends javax.swing.JPanel {
 
         txtWelcome.setFont(new java.awt.Font("Arial", 2, 14)); // NOI18N
         txtWelcome.setFocusable(false);
-        add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 580, 30));
+        add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 580, 30));
 
         jLabel3.setBackground(new java.awt.Color(102, 102, 102));
         jLabel3.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
@@ -334,10 +334,10 @@ public class VocationalSchoolAreaJPanel extends javax.swing.JPanel {
         jLabel13.setFont(new java.awt.Font("Arial", 3, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("Admin Portal for Passion Courses");
+        jLabel13.setText("Admin Portal for Vocational Courses");
         jLabel13.setFocusable(false);
         jLabel13.setOpaque(true);
-        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, 420, 40));
+        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 420, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/grad.JPG"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 650));
